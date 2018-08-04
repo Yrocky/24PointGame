@@ -1,0 +1,557 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7F5FD9A221159CE500DB70F8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F5FD9A121159CE500DB70F8 /* AppDelegate.m */; };
+		7F5FD9A521159CE500DB70F8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F5FD9A421159CE500DB70F8 /* ViewController.m */; };
+		7F5FD9A821159CE500DB70F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F5FD9A621159CE500DB70F8 /* Main.storyboard */; };
+		7F5FD9AA21159CE500DB70F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F5FD9A921159CE500DB70F8 /* Assets.xcassets */; };
+		7F5FD9AD21159CE500DB70F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F5FD9AB21159CE500DB70F8 /* LaunchScreen.storyboard */; };
+		7F5FD9B021159CE500DB70F8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F5FD9AF21159CE500DB70F8 /* main.m */; };
+		7F5FD9BA21159CE500DB70F8 /* _4PointGameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F5FD9B921159CE500DB70F8 /* _4PointGameTests.m */; };
+		7F5FD9C521159CE500DB70F8 /* _4PointGameUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F5FD9C421159CE500DB70F8 /* _4PointGameUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7F5FD9B621159CE500DB70F8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7F5FD99521159CE500DB70F8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7F5FD99C21159CE500DB70F8;
+			remoteInfo = 24PointGame;
+		};
+		7F5FD9C121159CE500DB70F8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7F5FD99521159CE500DB70F8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7F5FD99C21159CE500DB70F8;
+			remoteInfo = 24PointGame;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7F5FD99D21159CE500DB70F8 /* 24PointGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 24PointGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F5FD9A021159CE500DB70F8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7F5FD9A121159CE500DB70F8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7F5FD9A321159CE500DB70F8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		7F5FD9A421159CE500DB70F8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		7F5FD9A721159CE500DB70F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7F5FD9A921159CE500DB70F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7F5FD9AC21159CE500DB70F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7F5FD9AE21159CE500DB70F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F5FD9AF21159CE500DB70F8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7F5FD9B521159CE500DB70F8 /* 24PointGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 24PointGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F5FD9B921159CE500DB70F8 /* _4PointGameTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _4PointGameTests.m; sourceTree = "<group>"; };
+		7F5FD9BB21159CE500DB70F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F5FD9C021159CE500DB70F8 /* 24PointGameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 24PointGameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F5FD9C421159CE500DB70F8 /* _4PointGameUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _4PointGameUITests.m; sourceTree = "<group>"; };
+		7F5FD9C621159CE500DB70F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7F5FD99A21159CE500DB70F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F5FD9B221159CE500DB70F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F5FD9BD21159CE500DB70F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7F5FD99421159CE500DB70F8 = {
+			isa = PBXGroup;
+			children = (
+				7F5FD99F21159CE500DB70F8 /* 24PointGame */,
+				7F5FD9B821159CE500DB70F8 /* 24PointGameTests */,
+				7F5FD9C321159CE500DB70F8 /* 24PointGameUITests */,
+				7F5FD99E21159CE500DB70F8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7F5FD99E21159CE500DB70F8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7F5FD99D21159CE500DB70F8 /* 24PointGame.app */,
+				7F5FD9B521159CE500DB70F8 /* 24PointGameTests.xctest */,
+				7F5FD9C021159CE500DB70F8 /* 24PointGameUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7F5FD99F21159CE500DB70F8 /* 24PointGame */ = {
+			isa = PBXGroup;
+			children = (
+				7F5FD9A021159CE500DB70F8 /* AppDelegate.h */,
+				7F5FD9A121159CE500DB70F8 /* AppDelegate.m */,
+				7F5FD9A321159CE500DB70F8 /* ViewController.h */,
+				7F5FD9A421159CE500DB70F8 /* ViewController.m */,
+				7F5FD9A621159CE500DB70F8 /* Main.storyboard */,
+				7F5FD9A921159CE500DB70F8 /* Assets.xcassets */,
+				7F5FD9AB21159CE500DB70F8 /* LaunchScreen.storyboard */,
+				7F5FD9AE21159CE500DB70F8 /* Info.plist */,
+				7F5FD9AF21159CE500DB70F8 /* main.m */,
+			);
+			path = 24PointGame;
+			sourceTree = "<group>";
+		};
+		7F5FD9B821159CE500DB70F8 /* 24PointGameTests */ = {
+			isa = PBXGroup;
+			children = (
+				7F5FD9B921159CE500DB70F8 /* _4PointGameTests.m */,
+				7F5FD9BB21159CE500DB70F8 /* Info.plist */,
+			);
+			path = 24PointGameTests;
+			sourceTree = "<group>";
+		};
+		7F5FD9C321159CE500DB70F8 /* 24PointGameUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7F5FD9C421159CE500DB70F8 /* _4PointGameUITests.m */,
+				7F5FD9C621159CE500DB70F8 /* Info.plist */,
+			);
+			path = 24PointGameUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7F5FD99C21159CE500DB70F8 /* 24PointGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F5FD9C921159CE500DB70F8 /* Build configuration list for PBXNativeTarget "24PointGame" */;
+			buildPhases = (
+				7F5FD99921159CE500DB70F8 /* Sources */,
+				7F5FD99A21159CE500DB70F8 /* Frameworks */,
+				7F5FD99B21159CE500DB70F8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = 24PointGame;
+			productName = 24PointGame;
+			productReference = 7F5FD99D21159CE500DB70F8 /* 24PointGame.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7F5FD9B421159CE500DB70F8 /* 24PointGameTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F5FD9CC21159CE500DB70F8 /* Build configuration list for PBXNativeTarget "24PointGameTests" */;
+			buildPhases = (
+				7F5FD9B121159CE500DB70F8 /* Sources */,
+				7F5FD9B221159CE500DB70F8 /* Frameworks */,
+				7F5FD9B321159CE500DB70F8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7F5FD9B721159CE500DB70F8 /* PBXTargetDependency */,
+			);
+			name = 24PointGameTests;
+			productName = 24PointGameTests;
+			productReference = 7F5FD9B521159CE500DB70F8 /* 24PointGameTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7F5FD9BF21159CE500DB70F8 /* 24PointGameUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F5FD9CF21159CE500DB70F8 /* Build configuration list for PBXNativeTarget "24PointGameUITests" */;
+			buildPhases = (
+				7F5FD9BC21159CE500DB70F8 /* Sources */,
+				7F5FD9BD21159CE500DB70F8 /* Frameworks */,
+				7F5FD9BE21159CE500DB70F8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7F5FD9C221159CE500DB70F8 /* PBXTargetDependency */,
+			);
+			name = 24PointGameUITests;
+			productName = 24PointGameUITests;
+			productReference = 7F5FD9C021159CE500DB70F8 /* 24PointGameUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7F5FD99521159CE500DB70F8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = Yrocky;
+				TargetAttributes = {
+					7F5FD99C21159CE500DB70F8 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					7F5FD9B421159CE500DB70F8 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 7F5FD99C21159CE500DB70F8;
+					};
+					7F5FD9BF21159CE500DB70F8 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 7F5FD99C21159CE500DB70F8;
+					};
+				};
+			};
+			buildConfigurationList = 7F5FD99821159CE500DB70F8 /* Build configuration list for PBXProject "24PointGame" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7F5FD99421159CE500DB70F8;
+			productRefGroup = 7F5FD99E21159CE500DB70F8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7F5FD99C21159CE500DB70F8 /* 24PointGame */,
+				7F5FD9B421159CE500DB70F8 /* 24PointGameTests */,
+				7F5FD9BF21159CE500DB70F8 /* 24PointGameUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7F5FD99B21159CE500DB70F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F5FD9AD21159CE500DB70F8 /* LaunchScreen.storyboard in Resources */,
+				7F5FD9AA21159CE500DB70F8 /* Assets.xcassets in Resources */,
+				7F5FD9A821159CE500DB70F8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F5FD9B321159CE500DB70F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F5FD9BE21159CE500DB70F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7F5FD99921159CE500DB70F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F5FD9A521159CE500DB70F8 /* ViewController.m in Sources */,
+				7F5FD9B021159CE500DB70F8 /* main.m in Sources */,
+				7F5FD9A221159CE500DB70F8 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F5FD9B121159CE500DB70F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F5FD9BA21159CE500DB70F8 /* _4PointGameTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F5FD9BC21159CE500DB70F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F5FD9C521159CE500DB70F8 /* _4PointGameUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7F5FD9B721159CE500DB70F8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7F5FD99C21159CE500DB70F8 /* 24PointGame */;
+			targetProxy = 7F5FD9B621159CE500DB70F8 /* PBXContainerItemProxy */;
+		};
+		7F5FD9C221159CE500DB70F8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7F5FD99C21159CE500DB70F8 /* 24PointGame */;
+			targetProxy = 7F5FD9C121159CE500DB70F8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7F5FD9A621159CE500DB70F8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7F5FD9A721159CE500DB70F8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7F5FD9AB21159CE500DB70F8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7F5FD9AC21159CE500DB70F8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7F5FD9C721159CE500DB70F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7F5FD9C821159CE500DB70F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7F5FD9CA21159CE500DB70F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NMPWT5DFF8;
+				INFOPLIST_FILE = 24PointGame/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rocky.-4PointGame";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7F5FD9CB21159CE500DB70F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NMPWT5DFF8;
+				INFOPLIST_FILE = 24PointGame/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rocky.-4PointGame";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7F5FD9CD21159CE500DB70F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NMPWT5DFF8;
+				INFOPLIST_FILE = 24PointGameTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rocky.-4PointGameTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/24PointGame.app/24PointGame";
+			};
+			name = Debug;
+		};
+		7F5FD9CE21159CE500DB70F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NMPWT5DFF8;
+				INFOPLIST_FILE = 24PointGameTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rocky.-4PointGameTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/24PointGame.app/24PointGame";
+			};
+			name = Release;
+		};
+		7F5FD9D021159CE500DB70F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NMPWT5DFF8;
+				INFOPLIST_FILE = 24PointGameUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rocky.-4PointGameUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = 24PointGame;
+			};
+			name = Debug;
+		};
+		7F5FD9D121159CE500DB70F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NMPWT5DFF8;
+				INFOPLIST_FILE = 24PointGameUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rocky.-4PointGameUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = 24PointGame;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7F5FD99821159CE500DB70F8 /* Build configuration list for PBXProject "24PointGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F5FD9C721159CE500DB70F8 /* Debug */,
+				7F5FD9C821159CE500DB70F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7F5FD9C921159CE500DB70F8 /* Build configuration list for PBXNativeTarget "24PointGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F5FD9CA21159CE500DB70F8 /* Debug */,
+				7F5FD9CB21159CE500DB70F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7F5FD9CC21159CE500DB70F8 /* Build configuration list for PBXNativeTarget "24PointGameTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F5FD9CD21159CE500DB70F8 /* Debug */,
+				7F5FD9CE21159CE500DB70F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7F5FD9CF21159CE500DB70F8 /* Build configuration list for PBXNativeTarget "24PointGameUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F5FD9D021159CE500DB70F8 /* Debug */,
+				7F5FD9D121159CE500DB70F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7F5FD99521159CE500DB70F8 /* Project object */;
+}
