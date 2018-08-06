@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "ObjectiveCViewController.h"
 
 @interface ViewController ()
 
@@ -16,7 +17,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    
+}
+- (IBAction)onOCGameAction:(id)sender {
+    ObjectiveCViewController * ocGame = [[ObjectiveCViewController alloc] init];
+    [self.navigationController pushViewController:ocGame
+                                         animated:YES];
 }
 
 
