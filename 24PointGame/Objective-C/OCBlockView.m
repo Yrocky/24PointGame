@@ -7,6 +7,7 @@
 //
 
 #import "OCBlockView.h"
+#import "OCBlock.h"
 
 @implementation OCBlockView
 
@@ -18,8 +19,27 @@
     self = [super init];
     if (self) {
         _block = block;
+        _mm_blockOrigin = CGPointMake(_block.x / 4.0, _block.y / 5.0);
+        _mm_blockSize = [self fetchBlockSize];
+        self.backgroundColor = [UIColor orangeColor];
     }
     return self;
 }
 
+- (CGSize) fetchBlockSize{
+    
+    if (self.block.type == OCBlockTypeEnemy) {
+        return (CGSize){2.0/4.0,2.0/5.0};
+    }
+    else if (self.block.type == OCBlockTypeSoldier){
+        return (CGSize){1.0/4.0,1.0/5.0};
+    }
+    else if (self.block.type == OCBlockTypeGeneralVertical){
+        return (CGSize){1.0/4.0,2.0/5.0};
+    }
+    else if (self.block.type == OCBlockTypeGeneralHorizontal){
+        return (CGSize){2.0/4.0,1.0/5.0};
+    }
+    return CGSizeZero;
+}
 @end

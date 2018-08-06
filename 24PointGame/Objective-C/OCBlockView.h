@@ -12,6 +12,8 @@
 @interface OCBlockView : UIButton
 
 @property (nonatomic ,strong ,readonly) OCBlock * block;
+@property (nonatomic ,assign ,readonly) CGPoint mm_blockOrigin;
+@property (nonatomic ,assign ,readonly) CGSize mm_blockSize;
 
 + (instancetype) blockViewWith:(OCBlock *)block;
 @end

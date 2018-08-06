@@ -8,9 +8,9 @@
 
 #import "ObjectiveCViewController.h"
 #import "OCLevel.h"
-#import "OCBlock.h"
 #import "OCGameView.h"
-#import "OCBlockView.h"
+#import "Masonry.h"
+
 @interface ObjectiveCViewController ()
 @property (nonatomic ,strong) OCGameView * gameView;
 @end
@@ -25,6 +25,15 @@
     NSString * levelString = @"1;1;34;0,0,7;1,0,0;3,0,7;0,2,7;3,1,7;0,3,2;1,2,1;3,2,3;1,3,5;2,3,4";
     OCLevel * level = [OCLevel levelWith:levelString];
     
+//    UIView * redView = [UIView new];
+//    redView.backgroundColor = [UIColor redColor];
+//    [self.view addSubview:redView];
+//    [redView mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.width.mas_equalTo(self.view).multipliedBy(1/4.0);
+//        make.height.mas_equalTo(self.view).multipliedBy(1/5.0);
+//        make.left.mas_equalTo(self.view.mas_left).mas_offset(20);
+////        make.top.mas_equalTo(self.view.mas_height).multipliedBy(0);
+//    }];
     self.gameView = [OCGameView gameViewWith:level];
     [self.view addSubview:self.gameView];
 }

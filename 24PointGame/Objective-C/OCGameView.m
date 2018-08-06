@@ -7,6 +7,16 @@
 //
 
 #import "OCGameView.h"
+#import "OCLevel.h"
+#import "OCBlock.h"
+#import "OCBlockView.h"
+#import "Masonry.h"
+#import "NSArray+Sugar.h"
+
+@interface OCGameView ()
+
+@property (nonatomic ,strong) NSArray <OCBlockView *> *blockViews;
+@end
 
 @implementation OCGameView
 
@@ -32,5 +42,27 @@
 
 - (void) updateGameBlockView{
     
+    [self.blockViews mm_each:^(UIView * sub) {
+        nil != sub ? [sub removeFromSuperview] : nil;
+    }];
+    
+    self.blockViews = nil;
+    
+    self.blockViews = [self.level.blockViews mm_map:^OCBlockView *(OCBlockView * blockView) {
+        [self addSubview:blockView];
+        return blockView;
+    }];
+}
+
+- (void)layoutSubviews{
+    [super layoutSubviews];
+    [self.blockViews mm_each:^(OCBlockView * blockView) {
+        [blockView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.width.mas_equalTo(self).multipliedBy(blockView.mm_blockSize.width).offset(-4);
+            make.height.mas_equalTo(self).multipliedBy(blockView.mm_blockSize.height).offset(-4);
+            make.left.mas_equalTo(self).mas_offset(self.frame.size.width * blockView.mm_blockOrigin.x + 2);
+            make.top.mas_equalTo(self).mas_offset(self.frame.size.height * blockView.mm_blockOrigin.y + 2);
+        }];
+    }];
 }
 @end
