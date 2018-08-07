@@ -10,6 +10,7 @@
 #import "OCLevel.h"
 #import "OCGameView.h"
 #import "Masonry.h"
+#import "NSArray+Sugar.h"
 
 @interface ObjectiveCViewController ()
 @property (nonatomic ,strong) OCGameView * gameView;
@@ -25,10 +26,11 @@
 
     self.view.backgroundColor = [UIColor whiteColor];
     
+    
     NSString * levelString = @"1;1;34;0,0,7;1,0,0;3,0,7;0,2,7;3,1,7;0,3,2;1,2,1;3,2,3;1,3,5;2,3,4";
     levelString = @"1;2;69;0,0,7;1,0,0;3,0,2;0,1,7;0,2,7;1,2,1;3,2,3;0,3,7;1,3,8;1,4,9";
-    OCLevel * level = [OCLevel levelWith:levelString];
-    
+    OCLevel * level = [OCLevel levelWith:[self randomLevel]];
+    self.title = level.name;
     self.gameView = [OCGameView gameViewWith:level];
     [self.view addSubview:self.gameView];
     
@@ -86,6 +88,13 @@
     }];
 }
 
+- (NSString *) randomLevel{
+    
+    NSString * path = [[NSBundle mainBundle] pathForResource:@"huarongdao-level" ofType:@"plist"];
+    NSArray * levels = [NSArray arrayWithContentsOfFile:path];
+    return [levels mm_sample];
+}
+
 - (void) onBackAction{
     [self.gameView backStep];
 }
@@ -95,9 +104,8 @@
 }
 
 - (void) onNextLevelAction{
-    NSString * levelString = @"1;1;34;0,0,7;1,0,0;3,0,7;0,2,7;3,1,7;0,3,2;1,2,1;3,2,3;1,3,5;2,3,4";
-//    levelString = @"1;2;69;0,0,7;1,0,0;3,0,2;0,1,7;0,2,7;1,2,1;3,2,3;0,3,7;1,3,8;1,4,9";
-    OCLevel * level = [OCLevel levelWith:levelString];
+    OCLevel * level = [OCLevel levelWith:[self randomLevel]];
+    self.title = level.name;
     [self.gameView updateWith:level];
 }
 @end

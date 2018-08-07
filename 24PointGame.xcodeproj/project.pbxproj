@@ -24,6 +24,7 @@
 		7F5FD9E52116D8A700DB70F8 /* NSArray+Sugar.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F5FD9E32116D8A700DB70F8 /* NSArray+Sugar.m */; };
 		7F5FD9EB2117EBF200DB70F8 /* OCStep.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F5FD9EA2117EBF100DB70F8 /* OCStep.m */; };
 		7F5FD9F821186B7F00DB70F8 /* OCGameView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F5FD9F721186B7F00DB70F8 /* OCGameView.m */; };
+		7F5FDA2A2119A78A00DB70F8 /* huarongdao-level.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7F5FDA292119A78900DB70F8 /* huarongdao-level.plist */; };
 		C1E33D4405078B02EA53958A /* libPods-24PointGameUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F538FDAA343FAC554793CA44 /* libPods-24PointGameUITests.a */; };
 		FA798F357CF2B382AACAACB3 /* libPods-24PointGameTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 570B445DEA9DA5E351F88240 /* libPods-24PointGameTests.a */; };
 /* End PBXBuildFile section */
@@ -84,6 +85,7 @@
 		7F5FD9F621186B7F00DB70F8 /* OCGameView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCGameView.h; sourceTree = "<group>"; };
 		7F5FD9F721186B7F00DB70F8 /* OCGameView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCGameView.m; sourceTree = "<group>"; };
 		7F5FDA132119728600DB70F8 /* OCEnumHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCEnumHeader.h; sourceTree = "<group>"; };
+		7F5FDA292119A78900DB70F8 /* huarongdao-level.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "huarongdao-level.plist"; sourceTree = "<group>"; };
 		A849D082833E4476C85687EE /* Pods-24PointGame.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-24PointGame.debug.xcconfig"; path = "Pods/Target Support Files/Pods-24PointGame/Pods-24PointGame.debug.xcconfig"; sourceTree = "<group>"; };
 		CE6C313C400A32FE0FC38EBF /* Pods-24PointGameTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-24PointGameTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-24PointGameTests/Pods-24PointGameTests.release.xcconfig"; sourceTree = "<group>"; };
 		E542577D121B81602237C559 /* libPods-24PointGame.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-24PointGame.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -161,6 +163,7 @@
 				7F5FD9D82115A1F800DB70F8 /* Objective-C */,
 				7F5FD9A621159CE500DB70F8 /* Main.storyboard */,
 				7F5FD9A921159CE500DB70F8 /* Assets.xcassets */,
+				7F5FDA292119A78900DB70F8 /* huarongdao-level.plist */,
 				7F5FD9AB21159CE500DB70F8 /* LaunchScreen.storyboard */,
 				7F5FD9AE21159CE500DB70F8 /* Info.plist */,
 				7F5FD9AF21159CE500DB70F8 /* main.m */,
@@ -362,6 +365,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F5FD9AD21159CE500DB70F8 /* LaunchScreen.storyboard in Resources */,
+				7F5FDA2A2119A78A00DB70F8 /* huarongdao-level.plist in Resources */,
 				7F5FD9AA21159CE500DB70F8 /* Assets.xcassets in Resources */,
 				7F5FD9A821159CE500DB70F8 /* Main.storyboard in Resources */,
 			);

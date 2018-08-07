@@ -55,7 +55,9 @@
 
 - (void)reset{
 
-    [self updateGameBlockView];
+    if (self.moveSteps.count) {
+        [self updateGameBlockView];
+    }
 }
 
 - (void) backStep{
@@ -132,7 +134,6 @@
         [OCStep step:direction with:blockView.tag];
     })];
 }
-
 
 #pragma mark - OCBlockViewDelegate
 
