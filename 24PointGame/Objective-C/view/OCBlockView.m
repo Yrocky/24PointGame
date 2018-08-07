@@ -20,7 +20,9 @@
     self = [super init];
     if (self) {
         
+        self.alpha = 0;
         _block = block;
+        
         _mm_blockOrigin = CGPointMake(_block.x / 4.0, _block.y / 5.0);
         _mm_blockSize = [self fetchBlockSize];
         
@@ -34,6 +36,15 @@
         [self addGestureRecognizer:_gesture];
     }
     return self;
+}
+
+- (void)willMoveToSuperview:(UIView *)newSuperview{
+    
+    [super willMoveToSuperview:newSuperview];
+    
+    [UIView animateWithDuration:1.25 animations:^{
+        self.alpha = 1;
+    }];
 }
 
 - (void)layoutSubviews{
@@ -74,7 +85,42 @@
     return nil;
 }
 
+- (CGRect) fetchDestinationRectWith:(CGFloat)moveOffset to:(OCBlockViewMoveDirection)direction{
+    
+    CGRect originalRect = self.frame;
+    CGRect desRect = CGRectZero;
+    if (direction == OCBlockViewMoveToUp) {
+        desRect = (CGRect){
+            originalRect.origin.x,
+            originalRect.origin.y - moveOffset,
+            originalRect.size
+        };
+    }
+    else if (direction == OCBlockViewMoveToDown) {
+        desRect = (CGRect){
+            originalRect.origin.x,
+            originalRect.origin.y + moveOffset,
+            originalRect.size
+        };
+    }
+    else if (direction == OCBlockViewMoveToLeft) {
+        desRect = (CGRect){
+            originalRect.origin.x - moveOffset,
+            originalRect.origin.y,
+            originalRect.size
+        };
+    }
+    else if (direction == OCBlockViewMoveToRight) {
+        desRect = (CGRect){
+            originalRect.origin.x + moveOffset,
+            originalRect.origin.y,
+            originalRect.size
+        };
+    }
+    return desRect;
+}
 #pragma mark - Action
+
 - (void) onGestureAction:(UIPanGestureRecognizer *)gesture{
 
     if (gesture.state == UIGestureRecognizerStateChanged &&

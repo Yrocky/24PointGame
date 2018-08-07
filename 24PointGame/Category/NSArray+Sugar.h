@@ -17,7 +17,7 @@
 - (id) mm_sample;
 
 - (NSArray *) mm_map:(id (^)(id obj))handle;
-- (NSArray *) mm_mapWithskip:(id (^)(id obj, BOOL *skip))handle;
+- (NSArray *) mm_mapWithSkip:(id (^)(id obj, BOOL *skip))handle;
 - (NSArray *) mm_mapWithIndex:(id (^)(id obj,NSUInteger index))handle;
 - (NSArray *) mm_mapWithSkipIndex:(id (^)(id obj, BOOL *skip, NSUInteger idnex))handle;
 
@@ -35,6 +35,9 @@
 - (NSArray *) mm_merge:(NSArray *)other;
 //- (NSArray *) mm_special:(NSString *(^)(id obj))handle1 merge:(NSArray *)other special:(NSString * (^)(id obj))handle;
 
+// 轮询的遍历每一个对象，最后将所有元素变成一个元素
+- (id) mm_reduce:(id (^)(id accumulator, id object))block;
+- (id) mm_reduce:(id)initial withBlock:(id (^)(id accumulator, id object))block;
 #pragma mark - 布尔运算
 ///< self:[1,2,3,4] oher:[1,4,6,7,8] result:[1,4]
 - (NSArray *) mm_intersect:(NSArray *)other;

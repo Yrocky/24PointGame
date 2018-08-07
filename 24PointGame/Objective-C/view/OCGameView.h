@@ -12,6 +12,12 @@
 @interface OCGameView : UIView
 
 @property (nonatomic ,strong ,readonly) OCLevel * level;
+
 + (instancetype) gameViewWith:(OCLevel *)level;
+// 更新游戏
 - (void) updateWith:(OCLevel *)level;
+// 回退
+- (void) backStep;
+// 复位
+- (void) reset;
 @end

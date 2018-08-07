@@ -28,5 +28,7 @@
 @property (nonatomic ,assign ,readonly) CGSize mm_blockSize;
 
 @property (nonatomic ,weak) id<OCBlockViewDelegate> delegate;
+
 + (instancetype) blockViewWith:(OCBlock *)block;
+- (CGRect) fetchDestinationRectWith:(CGFloat)moveOffset to:(OCBlockViewMoveDirection)direction;
 @end

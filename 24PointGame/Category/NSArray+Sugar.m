@@ -88,7 +88,7 @@
     return [_self copy];
 }
 
-- (NSArray *) mm_mapWithskip:(id (^)(id obj, BOOL *skip))handle{
+- (NSArray *) mm_mapWithSkip:(id (^)(id obj, BOOL *skip))handle{
     
     NSMutableArray * _self = [NSMutableArray arrayWithCapacity:self.count];
     
@@ -164,6 +164,18 @@
     NSMutableArray * _self = [NSMutableArray arrayWithArray:self];
     [_self addObjectsFromArray:other];
     return [_self copy];
+}
+- (id) mm_reduce:(id (^)(id accumulator, id object))block {
+    return [self mm_reduce:nil withBlock:block];
+}
+
+- (id) mm_reduce:(id)initial withBlock:(id (^)(id accumulator, id object))block {
+    id accumulator = initial;
+    
+    for(id object in self){
+        accumulator = accumulator ? block(accumulator, object) : object;
+    }
+    return accumulator;
 }
 
 #pragma mark - 布尔运算

@@ -22,7 +22,6 @@
 		7F5FD9DE2116D46400DB70F8 /* OCLevel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F5FD9DD2116D46300DB70F8 /* OCLevel.m */; };
 		7F5FD9E12116D47300DB70F8 /* OCBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F5FD9E02116D47300DB70F8 /* OCBlock.m */; };
 		7F5FD9E52116D8A700DB70F8 /* NSArray+Sugar.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F5FD9E32116D8A700DB70F8 /* NSArray+Sugar.m */; };
-		7F5FD9E62116DB5000DB70F8 /* NSArray+Sugar.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F5FD9E32116D8A700DB70F8 /* NSArray+Sugar.m */; };
 		7F5FD9EB2117EBF200DB70F8 /* OCStep.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F5FD9EA2117EBF100DB70F8 /* OCStep.m */; };
 		7F5FD9F821186B7F00DB70F8 /* OCGameView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F5FD9F721186B7F00DB70F8 /* OCGameView.m */; };
 		C1E33D4405078B02EA53958A /* libPods-24PointGameUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F538FDAA343FAC554793CA44 /* libPods-24PointGameUITests.a */; };
@@ -158,6 +157,7 @@
 				7F5FD9A121159CE500DB70F8 /* AppDelegate.m */,
 				7F5FD9A321159CE500DB70F8 /* ViewController.h */,
 				7F5FD9A421159CE500DB70F8 /* ViewController.m */,
+				7F5FDA1E2119A03D00DB70F8 /* Category */,
 				7F5FD9D82115A1F800DB70F8 /* Objective-C */,
 				7F5FD9A621159CE500DB70F8 /* Main.storyboard */,
 				7F5FD9A921159CE500DB70F8 /* Assets.xcassets */,
@@ -189,17 +189,10 @@
 		7F5FD9D82115A1F800DB70F8 /* Objective-C */ = {
 			isa = PBXGroup;
 			children = (
-				7F5FD9E42116D8A700DB70F8 /* NSArray+Sugar.h */,
-				7F5FD9E32116D8A700DB70F8 /* NSArray+Sugar.m */,
+				7F5FDA132119728600DB70F8 /* OCEnumHeader.h */,
 				7F5FD9D221159F3000DB70F8 /* ObjectiveCViewController.h */,
 				7F5FD9D321159F3000DB70F8 /* ObjectiveCViewController.m */,
-				7F5FD9F621186B7F00DB70F8 /* OCGameView.h */,
-				7F5FD9F721186B7F00DB70F8 /* OCGameView.m */,
-				7F5FD9D52115A1F100DB70F8 /* OCBlockView.h */,
-				7F5FD9D62115A1F100DB70F8 /* OCBlockView.m */,
-				7F5FD9D92115A32500DB70F8 /* UIView+Meme.h */,
-				7F5FD9DA2115A32500DB70F8 /* UIView+Meme.m */,
-				7F5FDA132119728600DB70F8 /* OCEnumHeader.h */,
+				7F5FDA1F2119A05100DB70F8 /* view */,
 				7F5FD9E22116D47900DB70F8 /* model */,
 			);
 			path = "Objective-C";
@@ -216,6 +209,28 @@
 				7F5FD9EA2117EBF100DB70F8 /* OCStep.m */,
 			);
 			path = model;
+			sourceTree = "<group>";
+		};
+		7F5FDA1E2119A03D00DB70F8 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				7F5FD9D92115A32500DB70F8 /* UIView+Meme.h */,
+				7F5FD9DA2115A32500DB70F8 /* UIView+Meme.m */,
+				7F5FD9E42116D8A700DB70F8 /* NSArray+Sugar.h */,
+				7F5FD9E32116D8A700DB70F8 /* NSArray+Sugar.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		7F5FDA1F2119A05100DB70F8 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				7F5FD9F621186B7F00DB70F8 /* OCGameView.h */,
+				7F5FD9F721186B7F00DB70F8 /* OCGameView.m */,
+				7F5FD9D52115A1F100DB70F8 /* OCBlockView.h */,
+				7F5FD9D62115A1F100DB70F8 /* OCBlockView.m */,
+			);
+			path = view;
 			sourceTree = "<group>";
 		};
 		BEA46293EA1618940A04ECEA /* Pods */ = {
@@ -539,7 +554,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F5FD9BA21159CE500DB70F8 /* _4PointGameTests.m in Sources */,
-				7F5FD9E62116DB5000DB70F8 /* NSArray+Sugar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

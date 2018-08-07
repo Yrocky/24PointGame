@@ -19,7 +19,7 @@
     if (self) {
         _direction = direction;
         _blockViewTag = blockViewTag;
-        _backDirection = OCBlockViewMoveToUnknow - direction;
+        _backDirection = OCBlockViewMoveToDown - direction;
     }
     return self;
 }
