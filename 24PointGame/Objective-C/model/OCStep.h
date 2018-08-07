@@ -7,18 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
-
-typedef NS_ENUM(NSUInteger ,OCStepDirection) {
-    OCStepUp = 0,
-    OCStepLeft,
-    OCStepRight,
-    OCStepDown
-};
+#import "OCEnumHeader.h"
 
 @interface OCStep : NSObject
 
-@property (nonatomic ,assign ,readonly) OCStepDirection direction;
-@property (nonatomic ,assign ,readonly) OCStepDirection backDirection;
+@property (nonatomic ,assign ,readonly) OCBlockViewMoveDirection direction;
+@property (nonatomic ,assign ,readonly) OCBlockViewMoveDirection backDirection;
 @property (nonatomic ,assign ,readonly) NSUInteger blockViewTag;
-+ (instancetype) step:(OCStepDirection)direction with:(NSUInteger)blockViewTag;
++ (instancetype) step:(OCBlockViewMoveDirection)direction with:(NSUInteger)blockViewTag;
 @end

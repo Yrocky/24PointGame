@@ -7,14 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-
-typedef NS_ENUM(NSUInteger ,OCBlockType) {
-    OCBlockTypeSoldier,
-    OCBlockTypeGeneralVertical,
-    OCBlockTypeGeneralHorizontal,
-    OCBlockTypeEnemy,
-    OCBlockTypeUnknow,
-};
+#import "OCEnumHeader.h"
 
 @interface OCBlock : NSObject
 

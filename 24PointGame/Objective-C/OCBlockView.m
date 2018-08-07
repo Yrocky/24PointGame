@@ -8,6 +8,7 @@
 
 #import "OCBlockView.h"
 #import "OCBlock.h"
+#import "Masonry.h"
 
 @implementation OCBlockView
 
@@ -18,12 +19,28 @@
 - (instancetype) initWith:(OCBlock *)block{
     self = [super init];
     if (self) {
+        
         _block = block;
         _mm_blockOrigin = CGPointMake(_block.x / 4.0, _block.y / 5.0);
         _mm_blockSize = [self fetchBlockSize];
-        self.backgroundColor = [UIColor orangeColor];
+        
+        _contentImageView = [UIImageView new];
+        _contentImageView.image = [self fetchContentImage];
+        [self addSubview:_contentImageView];
+        
+        self.userInteractionEnabled = YES;
+        _gesture = [[UIPanGestureRecognizer alloc] initWithTarget:self
+                                                           action:@selector(onGestureAction:)];
+        [self addGestureRecognizer:_gesture];
     }
     return self;
+}
+
+- (void)layoutSubviews{
+    [super layoutSubviews];
+    [_contentImageView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.mas_equalTo(self);
+    }];
 }
 
 - (CGSize) fetchBlockSize{
@@ -42,4 +59,65 @@
     }
     return CGSizeZero;
 }
+
+- (UIImage *) fetchContentImage{
+    if (self.block.type == OCBlockTypeEnemy) {
+        return [UIImage imageNamed:@"enemy"];
+    }
+    else if (self.block.type == OCBlockTypeSoldier){
+        return [UIImage imageNamed:@"soldier"];
+    }
+    else if (self.block.type == OCBlockTypeGeneralVertical ||
+             self.block.type == OCBlockTypeGeneralHorizontal){
+        return [UIImage imageNamed:@"general"];
+    }
+    return nil;
+}
+
+#pragma mark - Action
+- (void) onGestureAction:(UIPanGestureRecognizer *)gesture{
+
+    if (gesture.state == UIGestureRecognizerStateChanged &&
+        !_alreadyResponseGesture) {
+        [self commitTranslation:[gesture translationInView:self]];
+    }
+    else if(gesture.state == UIGestureRecognizerStateEnded ||
+            gesture.state == UIGestureRecognizerStateCancelled ||
+            gesture.state == UIGestureRecognizerStateFailed){
+        _alreadyResponseGesture = NO;
+    }
+}
+
+- (void)commitTranslation:(CGPoint)translation{
+    
+    CGFloat absX = fabs(translation.x);
+    CGFloat absY = fabs(translation.y);
+    
+    OCBlockViewMoveDirection moveDirection = OCBlockViewMoveToUnknow;
+    if (MAX(absX, absY) < 15){
+        _alreadyResponseGesture = NO;
+        return;
+    }
+    if (absX > absY ) {
+        if (translation.x < 0) {
+            moveDirection = OCBlockViewMoveToLeft;
+        }else{
+            moveDirection = OCBlockViewMoveToRight;
+        }
+    }
+    else if (absY > absX) {
+        if (translation.y < 0) {
+            moveDirection = OCBlockViewMoveToUp;
+        }else{
+            moveDirection = OCBlockViewMoveToDown;
+        }
+    }
+    if (moveDirection != OCBlockViewMoveToUnknow &&
+        self.delegate &&
+        [self.delegate respondsToSelector:@selector(blockView:willMoveTo:)]) {
+        [self.delegate blockView:self willMoveTo:moveDirection];
+    }
+    _alreadyResponseGesture = moveDirection != OCBlockViewMoveToUnknow;
+}
+
 @end

@@ -10,16 +10,16 @@
 
 @implementation OCStep
 
-+ (instancetype) step:(OCStepDirection)direction with:(NSUInteger)blockViewTag{
++ (instancetype) step:(OCBlockViewMoveDirection)direction with:(NSUInteger)blockViewTag{
     return [[self alloc] initWith:direction with:blockViewTag];
 }
 
-- (instancetype) initWith:(OCStepDirection)direction with:(NSUInteger)blockViewTag{
+- (instancetype) initWith:(OCBlockViewMoveDirection)direction with:(NSUInteger)blockViewTag{
     self = [super init];
     if (self) {
         _direction = direction;
         _blockViewTag = blockViewTag;
-        _backDirection = 3 - direction;
+        _backDirection = OCBlockViewMoveToUnknow - direction;
     }
     return self;
 }

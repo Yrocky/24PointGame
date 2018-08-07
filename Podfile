@@ -7,7 +7,9 @@ target '24PointGame' do
   # use_frameworks!
 
 #    pod 'WeexSDK', '0.17.0'
-    pod 'Masonry'
+#pod 'FBSnapshotTestCase', '~> 2.1.4'
+#pod 'iOSSnapshotTestCase/Core' 
+   pod 'Masonry'
     pod 'FBRetainCycleDetector'
     pod 'FBAllocationTracker'
     pod 'FBMemoryProfiler'

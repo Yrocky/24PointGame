@@ -7,13 +7,26 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "OCEnumHeader.h"
 
 @class OCBlock;
-@interface OCBlockView : UIButton
+@class OCBlockView;
+
+@protocol OCBlockViewDelegate <NSObject>
+
+- (void) blockView:(OCBlockView *)view willMoveTo:(OCBlockViewMoveDirection)direction;
+@end
+
+@interface OCBlockView : UIView{
+    UIImageView * _contentImageView;
+    UIPanGestureRecognizer * _gesture;
+    BOOL _alreadyResponseGesture;
+}
 
 @property (nonatomic ,strong ,readonly) OCBlock * block;
 @property (nonatomic ,assign ,readonly) CGPoint mm_blockOrigin;
 @property (nonatomic ,assign ,readonly) CGSize mm_blockSize;
 
+@property (nonatomic ,weak) id<OCBlockViewDelegate> delegate;
 + (instancetype) blockViewWith:(OCBlock *)block;
 @end

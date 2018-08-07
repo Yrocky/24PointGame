@@ -84,6 +84,7 @@
 		7F5FD9EA2117EBF100DB70F8 /* OCStep.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCStep.m; sourceTree = "<group>"; };
 		7F5FD9F621186B7F00DB70F8 /* OCGameView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCGameView.h; sourceTree = "<group>"; };
 		7F5FD9F721186B7F00DB70F8 /* OCGameView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCGameView.m; sourceTree = "<group>"; };
+		7F5FDA132119728600DB70F8 /* OCEnumHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCEnumHeader.h; sourceTree = "<group>"; };
 		A849D082833E4476C85687EE /* Pods-24PointGame.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-24PointGame.debug.xcconfig"; path = "Pods/Target Support Files/Pods-24PointGame/Pods-24PointGame.debug.xcconfig"; sourceTree = "<group>"; };
 		CE6C313C400A32FE0FC38EBF /* Pods-24PointGameTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-24PointGameTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-24PointGameTests/Pods-24PointGameTests.release.xcconfig"; sourceTree = "<group>"; };
 		E542577D121B81602237C559 /* libPods-24PointGame.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-24PointGame.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -198,6 +199,7 @@
 				7F5FD9D62115A1F100DB70F8 /* OCBlockView.m */,
 				7F5FD9D92115A32500DB70F8 /* UIView+Meme.h */,
 				7F5FD9DA2115A32500DB70F8 /* UIView+Meme.m */,
+				7F5FDA132119728600DB70F8 /* OCEnumHeader.h */,
 				7F5FD9E22116D47900DB70F8 /* model */,
 			);
 			path = "Objective-C";
@@ -694,8 +696,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = NMPWT5DFF8;
+				DEVELOPMENT_TEAM = T97BM84S3F;
 				INFOPLIST_FILE = 24PointGame/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.rocky.-4PointGame";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -709,8 +712,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = NMPWT5DFF8;
+				DEVELOPMENT_TEAM = T97BM84S3F;
 				INFOPLIST_FILE = 24PointGame/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.rocky.-4PointGame";
 				PRODUCT_NAME = "$(TARGET_NAME)";

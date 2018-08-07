@@ -93,6 +93,34 @@
     XCTAssertEqual(step.backDirection, OCStepLeft);
 }
 
+- (void) testUrlString{
+    
+    NSString * noneToken = @"http:2339.com/shop";
+    NSString * haveToken = @"http:2339.com/shop?access_token=12523";
+    NSString * onePar = @"http:2339.com/shop?name=rocky";
+    NSString * oneParHaveToken = @"http:2339.com/shop?name=rocky&access_token=12523";
+    NSString * twoPar = @"http:2339.com/shop?name=rocky&title=share";
+    NSString * twoParHaveToken = @"http:2339.com/shop?name=rocky&title=share&access_token=12523";
+    
+    XCTAssertTrue([[self url:noneToken] isEqualToString: @"http:2339.com/shop?access_token=12523"]);
+    XCTAssertTrue([[self url:haveToken] isEqualToString:@"http:2339.com/shop?access_token=12523"]);
+    XCTAssertTrue([[self url:onePar] isEqualToString:@"http:2339.com/shop?name=rocky&access_token=12523"]);
+    XCTAssertTrue([[self url:oneParHaveToken] isEqualToString:@"http:2339.com/shop?name=rocky&access_token=12523"]);
+    XCTAssertTrue([[self url:twoPar] isEqualToString:@"http:2339.com/shop?name=rocky&title=share&access_token=12523"]);
+    XCTAssertTrue([[self url:twoParHaveToken] isEqualToString:@"http:2339.com/shop?name=rocky&title=share&access_token=12523"]);
+}
+
+- (NSString *) url:(NSString *)urlStr{
+    NSString * s = urlStr;
+    if (![s containsString:@"access_token"]) {
+        if ([s containsString:@"&"] || [s containsString:@"?"]) {
+            s = [s stringByAppendingString:[NSString stringWithFormat:@"&access_token=%@",@"12523"]];
+        }else{
+            s = [s stringByAppendingString:[NSString stringWithFormat:@"?access_token=%@",@"12523"]];
+        }
+    }
+    return s;
+}
 - (void)testPerformanceExample {
     // This is an example of a performance test case.
     [self measureBlock:^{
